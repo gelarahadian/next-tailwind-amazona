@@ -16,16 +16,16 @@ export default function Layout({ title, children }) {
           <nav className="flex justify-between h-12 shadow-lg items-center px-4 ">
             <Link href="/">Amazona</Link>
             <div>
-              <Link href="cart" className="p-2">
+              <Link href="/cart" className="p-2">
                 Cart
               </Link>
-              <Link href="login" className="p-2">
+              <Link href="/login" className="p-2">
                 Login
               </Link>
             </div>
           </nav>
         </header>
-        <main className="container mt-4 m-auto ">{children}</main>
+        <main className="container mt-4 m-auto p-4 ">{children}</main>
         <footer className="flex justify-center items-center h-12 shadow-inner">
           footer
         </footer>
