@@ -21,7 +21,7 @@ export default function PaymentScreen() {
     dispatch({ type: 'SAVE_PAYMENT_METHOD', payload: selectedPaymentMethod });
     Cookies.set(
       'cart',
-      JSON.stringify({ ...cart, paymnetMethod: selectedPaymentMethod })
+      JSON.stringify({ ...cart, paymentMethod: selectedPaymentMethod })
     );
     router.push('/placeorder');
   };
@@ -60,3 +60,5 @@ export default function PaymentScreen() {
     </Layout>
   );
 }
+
+PaymentScreen.auth = true;
